@@ -1,4 +1,4 @@
-﻿@[TOC](【学习AI-相关路程-参考学习-学习他人文章-win11上-安装cuda和cudnn-工具安装 】)
+
 
 # 1、 前言
 
@@ -86,56 +86,56 @@ cuDNN 被广泛应用于许多需要高性能计算的深度学习应用中，�
 nvidia-smi
 ```
 如下自己电脑显示的。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/746754adb83d4499bf42eb3ad547b321.png)
+![](https://i-blog.csdnimg.cn/direct/746754adb83d4499bf42eb3ad547b321.png)
 当然你说不会使用终端，那么使用图像界面工具也是可以的。
 
 （2）在搜索中输入“NVIDIA Control Panel”，
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0c6e6ae926044e4ba077395cf63eb092.png)
+![](https://i-blog.csdnimg.cn/direct/0c6e6ae926044e4ba077395cf63eb092.png)
 
 ```shell
 NVIDIA Control Panel
 ```
 基本会看到如上软件。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2cd19bae078a451cac2894df357759d2.png)
+![](https://i-blog.csdnimg.cn/direct/2cd19bae078a451cac2894df357759d2.png)
 然后在帮助内的==“系统信息”==里找到组件，可以查看
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8b4b520f75f5439498810f1c06a98aba.png)
+![](https://i-blog.csdnimg.cn/direct/8b4b520f75f5439498810f1c06a98aba.png)
 
 
 （3）通过上述两种方式，确定cuda版本。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6fdcd6becdee462ab7783b3ec2cb62a2.png)
+![ ](https://i-blog.csdnimg.cn/direct/6fdcd6becdee462ab7783b3ec2cb62a2.png)
 如上图，就可以确定是12.2.1了
 
 ### 2-去英伟达官网下载cuda
 （1）确定版本后，我们去官网，当然，需要先注册账号，你要是喜欢打游戏，那个账号是一样的，就不需要注册了，用那个账号是通用的。
 官网链接：[https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/aab99d22e8b843bbad48cd1ad9e8196d.png)
+![ ](https://i-blog.csdnimg.cn/direct/aab99d22e8b843bbad48cd1ad9e8196d.png)
 如下图，选择自己之前确认的cuda版本。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/cb4a96c4067949208bf2254bdaffc9b5.png)
+![ ](https://i-blog.csdnimg.cn/direct/cb4a96c4067949208bf2254bdaffc9b5.png)
 
 （2）选择自己对应的版本，我这里因为是12.2cuda，所以如下选择。我们直接选择exe，直接下载下来，进行安装。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/eeb1bebb27aa4d7db038e504e32e2243.png)
+![ ](https://i-blog.csdnimg.cn/direct/eeb1bebb27aa4d7db038e504e32e2243.png)
 可以看到大概是3G左右，点击“Download(3.0GB)”
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/74fa048bf22242b7b61615abdc08a594.png)
+![ ](https://i-blog.csdnimg.cn/direct/74fa048bf22242b7b61615abdc08a594.png)
 （3）下载完毕的包如下
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b8944099172e40028d36661f367b17ba.png)
+![ ](https://i-blog.csdnimg.cn/direct/b8944099172e40028d36661f367b17ba.png)
 ### 3-双击安装
 （1）安装最好默认，据参考博主说，安装其他目录失败了，那么最好默认安装，当然如果选择其他目录，也可以尝试下，看评论说有成功的。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a7ffc490aa46423faf56367ed2f1d002.png)
+![ ](https://i-blog.csdnimg.cn/direct/a7ffc490aa46423faf56367ed2f1d002.png)
 （2）检查系统兼容性
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ea6691de4d7a4e5bbf0d7458794ff8fa.png)
+![ ](https://i-blog.csdnimg.cn/direct/ea6691de4d7a4e5bbf0d7458794ff8fa.png)
 （3）和参考博文一样，选择自定义安装
 ![h](https://i-blog.csdnimg.cn/direct/efd9c66fb6b8402494d9b91816a38741.png)
 （5）安装的组件，cuda是必装的。其他可以了解下。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/eaddeb967b4c48b9b43f247d5f12b164.png)
+![ ](https://i-blog.csdnimg.cn/direct/eaddeb967b4c48b9b43f247d5f12b164.png)
 （6）安装位置，最好留意下，后续要配置环境变量
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/1695801caa904648ad016fe6991bca15.png)
+![ ](https://i-blog.csdnimg.cn/direct/1695801caa904648ad016fe6991bca15.png)
 （7）安装过程
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6a7a1ceec11b433dbc84863af04d5fa6.png)
+![ ](https://i-blog.csdnimg.cn/direct/6a7a1ceec11b433dbc84863af04d5fa6.png)
 （8）安装完成
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d4f10cfdfd9f474abc3b5492078a9e4f.png)
+![ ](https://i-blog.csdnimg.cn/direct/d4f10cfdfd9f474abc3b5492078a9e4f.png)
 ### 4-验证cuda
 安装完成后，使用如下命令进行验证。
 
@@ -143,14 +143,14 @@ NVIDIA Control Panel
 nvcc -V
 ```
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/66758ab5739d49fe8edc56195b6374c4.png)
+![ ](https://i-blog.csdnimg.cn/direct/66758ab5739d49fe8edc56195b6374c4.png)
 
 
 ### 5-确认cuda环境变量
 （1）在搜索中输入“编辑环境变量”，进行相关环境变量编辑，如下图所示。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/68d7394f294c498bbe64121bd723db09.png)
+![ ](https://i-blog.csdnimg.cn/direct/68d7394f294c498bbe64121bd723db09.png)
 （2）确认已有的环境变量，如下图为软件自动安装后，有了的cuda环境变量。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/aaf0c36046674a7993aeea69a209494f.png)
+![ ](https://i-blog.csdnimg.cn/direct/aaf0c36046674a7993aeea69a209494f.png)
 
 
 ## 2、安装cuDNN
@@ -162,7 +162,7 @@ nvcc -V
 
 ### 2-去英伟达官网下载cuDNN
 我们直接选择对应的版本的zip。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/84e686a247504dbabbbd8b26bc989bc7.png)
+![ ](https://i-blog.csdnimg.cn/direct/84e686a247504dbabbbd8b26bc989bc7.png)
 ### 3-复制到对应目录下
 我们下载这个，主要是复制到对应目录下。
 
@@ -170,16 +170,16 @@ nvcc -V
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\lib\x64
 ```
 如下图，将解压的文件复制这个目录下。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/196349a103224c55b28f1cc165421621.png)
+![ ](https://i-blog.csdnimg.cn/direct/196349a103224c55b28f1cc165421621.png)
 
 
 ## 3、配置环境变量
 之后就是配置环境变量了，
 ### 1-打开环境变量
 （1）在搜索中输入“编辑环境变量”，进行相关环境变量编辑，如下图所示。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/68d7394f294c498bbe64121bd723db09.png)
+![ ](https://i-blog.csdnimg.cn/direct/68d7394f294c498bbe64121bd723db09.png)
 （2）确认已有的环境变量，如下图为软件自动安装后，有了的cuda环境变量。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/aaf0c36046674a7993aeea69a209494f.png)
+![ ](https://i-blog.csdnimg.cn/direct/aaf0c36046674a7993aeea69a209494f.png)
 如上，是我们刚才确认的，然后新建环境变量。
 ### 2-新建环境变量-相关说明
 ==这里我自己应该犯了一个错误，我不确定是不是应该编辑Path，还是说，直接新建。不过最后过了，如果到时候有问题在改吧。==
@@ -187,14 +187,14 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\lib\x64
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8fe2c1e6b372425daaa6f6e8ac8fb2fb.png)
 ### 3-新建环境变量-我自己尝试
 下图直接点击“新建”
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/27eb257e92f04cf287fa228e1f5b59b1.png)
+![ ](https://i-blog.csdnimg.cn/direct/27eb257e92f04cf287fa228e1f5b59b1.png)
 就会出如下。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0fc60a660f2d48ef81f4f8ef30ad85aa.png)
+![ ](https://i-blog.csdnimg.cn/direct/0fc60a660f2d48ef81f4f8ef30ad85aa.png)
 起个名字之后，分别编辑另几个。
 
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c86fdc5702c1424086a260dc4b0763b4.png)
+![ ](https://i-blog.csdnimg.cn/direct/c86fdc5702c1424086a260dc4b0763b4.png)
 
 
 ## 4、验证安装结果
@@ -204,7 +204,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\lib\x64
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\extras\demo_suite
 ```
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ceaa3f8ab97b44e6aa52f5bb5e68fadd.png)
+![ ](https://i-blog.csdnimg.cn/direct/ceaa3f8ab97b44e6aa52f5bb5e68fadd.png)
 如上图所示，右键点开终端
 
 或者
@@ -214,19 +214,19 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\extras\demo_suite
 ```shell
 cd /d C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\extras\demo_suite
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/27c3e73e1d66487bb3da53ec1a4e3bb2.png)
+![ ](https://i-blog.csdnimg.cn/direct/27c3e73e1d66487bb3da53ec1a4e3bb2.png)
 （2）进入目录后，运行exe文件，如下为运行.\deviceQuery.exe
 
 ```shell
 .\deviceQuery.exe
 ```
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/42891b0c4ea54957a41d696cf5ac5cd6.png)
+![ ](https://i-blog.csdnimg.cn/direct/42891b0c4ea54957a41d696cf5ac5cd6.png)
 如下为运行软件 .\bandwidthTest.exe
 ```shell
  .\bandwidthTest.exe
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/754b0572bd5e460fa1453464babcad43.png)
+![ ](https://i-blog.csdnimg.cn/direct/754b0572bd5e460fa1453464babcad43.png)
 最后都会有什么pass字样为成功。
 ```shell
 Windows PowerShell
